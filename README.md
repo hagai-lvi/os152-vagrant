@@ -56,4 +56,10 @@ Notice this command will only work if you're running it from somewhere in the di
 
 ### References:
  * http://www.hashbangcode.com/blog/connecting-vagrant-box-without-vagrant-ssh-command
- * https://netbeans.org/kb/docs/cnd/remotedev-tutorial.html
+ * https://netbeans.org/kb/docs/cnd/remotedev-tutorial.html  
+
+
+# Debugging from local GDB
+* Add `config.vm.network "forwarded_port", guest: 26001, host: 26001` to your Vagrantfile (26001 is the port used by GDB)
+* Start qemu with GDB by using `make clean qemu-nox-gdb` (verify that the used port is 26001).
+* execute `target remote 127.0.0.1:26001` from withing GDB to connect to the running process
