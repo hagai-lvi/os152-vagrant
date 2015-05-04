@@ -52,7 +52,7 @@ Notice this command will only work if you're running it from somewhere in the di
  * click next, review the results and click finish.
  * Now go to project properties, click `run` and add `make qemu-nox` as the Run Command, and press `OK`
  * Click the `Build` button, and then the `Run` button.
- * You are now running `XV6` from netbeans
-## references:
+ * You are now running `XV6` from netbeans  
+### references:
  * http://www.hashbangcode.com/blog/connecting-vagrant-box-without-vagrant-ssh-command
  * https://netbeans.org/kb/docs/cnd/remotedev-tutorial.html
