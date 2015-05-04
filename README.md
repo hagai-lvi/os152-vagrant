@@ -51,7 +51,7 @@ Notice this command will only work if you're running it from somewhere in the di
  * In the `login` field, enter `vagrant` (or whatever username you are using), and select `SSH Key File` authentication. click `browse` and select the `IdentityFile` from step 1.
  * click next, review the results and click finish.
  * Now go to project properties, click `run` and add `make qemu-nox` as the Run Command, and press `OK`
- * Click the `Build` button, and then the `Run` button.
+ * Click the `Build` button (you might need to add mapping between local files and remote files), and then the `Run` button.
  * You are now running `XV6` from netbeans  
 
 ### References:
