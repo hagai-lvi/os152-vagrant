@@ -54,6 +54,6 @@ Notice this command will only work if you're running it from somewhere in the di
  * Click the `Build` button, and then the `Run` button.
  * You are now running `XV6` from netbeans  
 
-# references:
+### References:
  * http://www.hashbangcode.com/blog/connecting-vagrant-box-without-vagrant-ssh-command
  * https://netbeans.org/kb/docs/cnd/remotedev-tutorial.html
