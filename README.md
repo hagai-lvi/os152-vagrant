@@ -44,3 +44,12 @@ Add this to your `~/.bash_profile` or `~/.zshrc` file to make it persistant
 This will send the `killall qemu-system-i386` command over ssh to your vagrant machine.
 Notice this command will only work if you're running it from somewhere in the directory path of the Vagrantfile running this machine
 
+# Integrating netbeans on OSX
+ * After your vagrant machine is running, execute `vagrant ssh-config`, and note the `HostName`, `Port` and `IdentityFile`.
+ * In netbeans, go to `Window`->`Services`, right click on `C/C++ Build Hosts` and select `Add New Host`
+ * Insert the `HostName` and `Port` properties from step 1, and click next.
+ * In the `login` field, enter `vagrant` (or whatever username you are using), and select `SSH Key File` authentication. click `browse` and select the `IdentityFile` from step 1.
+ * click next, review the results and click finish.
+ * Now go to project properties, click `run` and add `make qemu-nox` as the Run Command, and press `OK`
+ * Click the `Build` button, and then the `Run` button.
+ * You are now running `XV6` from netbeans
